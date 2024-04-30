@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {
+    --prymare: #000;
+    --ligt: #f1f1f1;
+    --grenn: #0f2182;
+    --Dark: #777;
+    --white: #fff;
+    --back: #dfdcdc;
+    --hover: #0f2182;
+    --ico: #304ffe;
+    --licks: #989898;
+    --fontWeight: 700;
+}
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none !important;
+    list-style: none !important;
+    text-transform: capitalize;
+
+}
+
+body {
+    background-color: var(--ligt);
+    justify-content: space-between;
+}
+
+section {
+    overflow: hidden;
+}
+
+/* section title */
+.section-titleOn {
+    color: var(--grenn);
+    cursor: pointer;
+}
+
+/* header */
+
+.Nav-logo {
+    color: var(--grenn) !important;
+    font-weight: var(--fontWeight);
+}
+
+.bottom {
+    margin: 0 15px;
+
+}
+
+@media (min-width: 992px) {
+    .collapse .innerMinu {
+        display: none;
+    }
+    .buttomsAut {
+        display: block !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .buttoms {
+        display: none;
+    }
+    .collapse .innerMinu {
+        display: grid;
+        transition: all ease 1s;
+    }
+    .mx-5 {
+        margin: 0 !important;
+    }
+    .Nav-list-position {
+        padding: 40px;
+        position: fixed;
+        background-color: #000;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        z-index: 100;
+    }
+    .collapse .navbar-nav .active,
+    .collapse .navbar-nav .nav-link{
+        color: var(--white) !important;
+    }
+    .collapse .navbar-nav .nav-link:hover{
+        background-color: var(--white);
+        color: var(--prymare) !important;
+    }
+    .BuyNow{
+        margin: auto;
+    }
+}
+
+.btn {
+    align-items: center;
+}
+
+/* Star header main */
+.main-title {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.main-title span {
+    color: var(--grenn);
+    display: block;
+}
+
+.button-shop {
+    background-color: var(--grenn);
+    padding: 12px 30px;
+    width: 210px;
+    text-align: center;
+}
+
+/* End header main */
+
+
+/* Star Nft Section 1 */
+.Nft-box .box {
+    box-shadow: 0 0 10px #ddd;
+
+}
+
+.Nft-box .box {
+    border-radius: 10px;
+}
+
+.Nft-box .box .brg {
+    font-size: 15px;
+}
+
+/* End Nft Section 1 */
+
+/* star section Super Hot  */
+.container {
+    overflow: hidden;
+}
+
+.super-box .box {
+    border-radius: 10px;
+}
+
+.select {
+    flex-wrap: wrap;
+}
+
+.input-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 120px;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+.Nft-box-img {
+    border-radius: 10px;
+
+}
+
+.title-box h2 {
+    font-size: 12px;
+    color: var(--grenn);
+    font-weight: normal;
+}
+
+.title-box p {
+    font-size: 12px;
+    color: var(--Dark);
+    font-weight: normal;
+}
+
+.super-box .box .super-time {
+    border-top: 1px solid #edecec;
+}
+
+.super-box .box .super-time h6 {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #98989866;
+}
+
+.super-box .box .super-time .btn {
+    font-size: 14px;
+    font-weight: var(--fontWeight);
+    color: var(--hover);
+}
+
+.super-box .box .super-time .btn:hover {
+    background-color: #171313;
+    color: #ddd;
+}
+
+/* End section Super Hot  */
+
+/* star section Best Sellers */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+}
+.swiper-slide img {
+    border-radius: 12px;
+    width: 90px;
+}
+/* End section Best Sellers */
+
+/* star footer */
+.links a:hover {
+    color: var(--white) !important;
+}
+.icons i:hover {
+    color: var(--ico) !important;
+}
+.contact p {
+    font-weight: normal;
+    font-size: 13px;
+}
+/* end footer */
+
+/* star media */
+@media (max-width: 992px) {
+    .container {
+        text-align: center !important;
+    }
+    .contact {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 600px) {
+    container-main {
+        min-height: 90%;
+    }
+    .main-header {
+        margin-top: 60px;
+    }
+    .main-title {
+        font-size: 45px;
+    }
+    .main-right {
+        margin-top: 55px;
+    }
+    .text-black-50 {
+        margin: 20px 0;
+    }
+}
+@media (max-width: 380px) {
+    .main-header {
+        margin-top: 40px;
+    }
+    .main-title {
+        font-size: 37px;
+    }
+}
+/* End media */
+
+// star Icon Top
+.Icon-Top{
+    right: -20%;
+    padding: 12px;
+    bottom: 30px;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.3s ease;
+    z-index: 100;
+    cursor: pointer;
+}
+.Icon-Top i{
+    position: absolute;
+    animation: IconTop 1s infinite linear ;
+    line-height: 55px;
+}
+@keyframes IconTop {
+    0%{
+        top: 6px ;
+    }
+    100%{
+        top: -6px;
+    }
+}
+// end Icon Top
